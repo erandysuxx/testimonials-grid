@@ -116,3 +116,53 @@ img {
 .attribution { font-size: 11px; text-align: center; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 900px) {
+    #grid {
+        max-width: 1300px;
+        display: grid;
+        grid-template-areas:
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    body {
+        height: 93vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: .5rem;
+    }
+    .daniel-rectangle {
+        grid-area: daniel;
+    }
+
+    .jonathan-rectangle {
+        grid-area: jonathan;
+    }
+
+    .kira-rectangle {
+        grid-area: kira;
+    }
+
+    .patrick-rectangle {
+        grid-area: patrick;
+    }
+
+    .white, .grayish-blue {
+        margin: 1rem;
+
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+}
