@@ -145,7 +145,47 @@ img {
 
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (min-width: 900px) {
+@media(min-width: 900px) {
+    #grid {
+        max-width: 900px;
+        display: grid;
+        grid-template-areas: 
+        "daniel daniel"
+        "jonathan jeanette"
+        "patrick kira"
+        "patrick kira";
+        grid-template-columns: 50% 50%;
+    }
+
+    .daniel-rectangle {
+        grid-area: daniel;
+    }
+
+    .jonathan-rectangle {
+        grid-area: jonathan;
+    }
+
+    .kira-rectangle {
+        grid-area: kira;
+    }
+
+    .patrick-rectangle {
+        grid-area: patrick;
+    }
+
+    .white, .grayish-blue {
+        margin: 1rem;
+
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
     #grid {
         max-width: 1300px;
         display: grid;
